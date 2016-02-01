@@ -7,12 +7,18 @@ def sum arr
 end
 
 def max_2_sum arr
+  if arr.empty?
+    return 0
+  end
   arr.sort.last(2).reduce(:+)
 end
 
 def sum_to_n? arr, n
   if arr.length == 0 and n == 0
     return true
+  end
+  if arr.empty?
+    return false
   end
   # return false if arr.empty? || arr.size == 1
   l_index = 0
