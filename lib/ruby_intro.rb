@@ -14,11 +14,12 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  if arr.length == 0 and n == 0
-    return true
-  end
   if arr.empty?
     return false
+  end
+  
+  if arr.length == 0 and n == 0
+    return true
   end
   # return false if arr.empty? || arr.size == 1
   l_index = 0
